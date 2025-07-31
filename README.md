@@ -1,10 +1,14 @@
-# AWS SDK Learning Project
+# Welcome to your CDK TypeScript project
 
-Този проект е предназначен за обучение по AWS 
+This is a blank project for CDK development with TypeScript.
 
+The `cdk.json` file tells the CDK Toolkit how to execute your app.
 
-## 📚 Ресурси за обучение
+## Useful commands
 
-- [AWS SDK for JavaScript Documentation](https://docs.aws.amazon.com/sdk-for-javascript/)
-- [AWS React Examples](https://github.com/aws-samples/aws-react-examples)
-- [AWS Console](https://console.aws.amazon.com/) 
+* `npm run build`   compile typescript to js
+* `npm run watch`   watch for changes and compile
+* `npm run test`    perform the jest unit tests
+* `npx cdk deploy`  deploy this stack to your default AWS account/region
+* `npx cdk diff`    compare deployed stack with current state
+* `npx cdk synth`   emits the synthesized CloudFormation template
