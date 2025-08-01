@@ -1,0 +1,21 @@
+[33mcommit 60be3045da9a9e86a902ce26aaf65a4f556932cf[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m)[m
+Author: Anton Almishev <antonalmishev@abv.bg>
+Date:   Fri Aug 1 09:46:02 2025 +0300
+
+    set variables
+
+.github/workflows/deploy.yaml
+.github/workflows/lint.yaml
+.gitignore
+README.md
+bin/aws.ts
+env.example
+lambda/add-song.ts
+lambda/play-song.ts
+lambda/tsconfig.json
+lib/aws-stack.ts
+package-lock.json
+package.json
+test/architecture.test.ts
+test/aws.test.ts
+test/lambda.test.ts

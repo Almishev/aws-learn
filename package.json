@@ -9,8 +9,7 @@
     "watch": "tsc -w",
     "test": "jest",
     "cdk": "cdk",
-    "setup": "node scripts/setup-env.js",
-    "postinstall": "npm run setup"
+    "setup": "node scripts/setup-env.js"
   },
   "devDependencies": {
     "@types/jest": "^29.5.14",
