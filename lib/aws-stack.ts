@@ -42,6 +42,7 @@ export class AwsStack extends cdk.Stack {
     const addSongLambda = new lambdaNodejs.NodejsFunction(this, 'AddSongLambda', {
       handler: 'handler',
       runtime: lambda.Runtime.NODEJS_18_X,
+      architecture: lambda.Architecture.ARM_64, // ARM за по-ниски разходи
       entry: path.join(__dirname, '../lambda/add-song.ts'),
       environment: {
         SONGS_TABLE: songsTable.tableName,
@@ -91,6 +92,7 @@ export class AwsStack extends cdk.Stack {
     const playSongLambda = new lambdaNodejs.NodejsFunction(this, 'PlaySongLambda', {
       handler: 'handler',
       runtime: lambda.Runtime.NODEJS_18_X,
+      architecture: lambda.Architecture.ARM_64, // ARM за по-ниски разходи
       entry: path.join(__dirname, '../lambda/play-song.ts'),
       environment: {
         SONGS_TABLE: songsTable.tableName,
